@@ -1,0 +1,99 @@
+.login {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #00000090;
+    align-content: center;
+
+}
+
+.login-container {
+    width: 30%;
+    place-self: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+.login-container button{
+    background-color: tomato;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 19px;
+    
+}
+.login-container button:hover{
+    cursor: pointer;
+    background-color: rgb(228, 57, 27);
+}
+.login-form {
+  display: grid;
+  gap: 10px;
+
+  
+}
+
+.login-form input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid grey;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login-form input::placeholder{
+    padding: 5px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+}
+
+.header h3{
+    padding: 10px;
+    text-align: center;
+}
+
+.login-form button{
+    height: 35px;
+}
+
+.conditions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.conditions input{
+    width: 15px;
+    
+
+}
+.conditions input::content{
+    background-color: tomato;
+}
+
+.sign-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sign-button span{
+    color: red;
+    cursor: pointer;
+}

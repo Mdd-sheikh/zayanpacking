@@ -1,0 +1,91 @@
+.navbar {
+    width: 100%;
+}
+
+.container-one {
+    background-color: #0054A6;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+
+}
+
+.left-nav-container header {
+    display: flex;
+    gap: 100px;
+    font-size: max(1.1vw, 14px);
+    color: white;
+    font-weight: 100;
+    margin-left: 50px;
+}
+
+.right-nav-container {
+    margin-right: 100px;
+    color: white;
+}
+
+.right-nav-container i {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.container-two {
+    background-color: #065fb8;
+}
+
+.big-navbar-container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav-container-two img {
+    width: max(5vw, 40px);
+}
+
+.middle-nav-container-two {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    font-size: max(1.2vw, 11px);
+    color: white;
+    cursor: pointer;
+
+}
+
+.middle-nav-container-two .active{
+    color: rgb(0, 0, 0);
+}
+
+.right-nav-container-two {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.right-nav-container-two i {
+    font-size: max(1.6vw, 16px);
+    color: white;
+
+}
+
+.right-nav-container-two button {
+    width: 90px;
+    height: 35px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+}
+
+.right-nav-container-two button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
