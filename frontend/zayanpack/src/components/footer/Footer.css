@@ -1,5 +1,5 @@
 .footer{
-    font-family: "poppins hosted"sans-serif;
+    font-family: "Outfit" sans-serif;
     background-color: rgb(248, 249, 250);
 
 }
@@ -51,4 +51,14 @@
     color: white;
     text-align: center;
     cursor: pointer;
+}
+
+@media (max-width:450px) {
+
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .right-footer-container{
+        flex-wrap: wrap;
+    }
 }

@@ -1,5 +1,6 @@
 .navbar {
     width: 100%;
+    font-family: "Outfit" sans-serif;
 }
 
 .container-one {
@@ -15,7 +16,7 @@
 .left-nav-container header {
     display: flex;
     gap: 100px;
-    font-size: max(1.1vw, 14px);
+    font-size: max(1.1vw, 10px);
     color: white;
     font-weight: 100;
     margin-left: 50px;
@@ -88,4 +89,18 @@
     background-color: white;
     color: black;
     cursor: pointer;
+}
+
+@media (max-width:450px) {
+
+    .container-one{
+        gap: 50px;
+    }
+    .left-nav-container header{
+        gap: 25px;
+    }
+
+    .middle-nav-container-two{
+        display: none;
+    }
 }
