@@ -3,6 +3,11 @@
     font-family: "Outfit" sans-serif;
 }
 
+.active {
+    position: fixed;
+    top: 0;
+}
+
 .container-one {
     background-color: #0054A6;
     display: flex;
@@ -59,7 +64,7 @@
 
 }
 
-.middle-nav-container-two .active{
+.middle-nav-container-two .active {
     color: rgb(0, 0, 0);
 }
 
@@ -93,14 +98,15 @@
 
 @media (max-width:450px) {
 
-    .container-one{
+    .container-one {
         gap: 50px;
     }
-    .left-nav-container header{
+
+    .left-nav-container header {
         gap: 25px;
     }
 
-    .middle-nav-container-two{
+    .middle-nav-container-two {
         display: none;
     }
 }

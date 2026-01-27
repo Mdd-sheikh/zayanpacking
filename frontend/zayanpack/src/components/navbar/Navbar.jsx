@@ -9,7 +9,7 @@ const Navbar = ({ setShowPopup }) => {
     const NavbarHandler = () => {
         const navbar = document.getElementById("navbar")
 
-        if (navbar && window.scrollY > 10) {
+        if (navbar && window.scrollY > 100) {
             navbar.classList.add("active")
         } else if (navbar) {
             navbar.classList.remove("active")
