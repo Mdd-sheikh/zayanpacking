@@ -97,3 +97,15 @@
     color: red;
     cursor: pointer;
 }
+
+
+
+@media (max-width:450px) {
+    .login{
+        width: 100%;
+    }
+
+    .login-container{
+        width: 80%;
+    }
+}

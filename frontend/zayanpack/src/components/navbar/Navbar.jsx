@@ -5,11 +5,12 @@ import logo from '../../assets/nav-logo.webp'
 const Navbar = ({ setShowPopup }) => {
 
     const [navbar, setNavbar] = useState("navbar")
+    const [mobileNav,setMobileNav] = useState("mobile")
 
     const NavbarHandler = () => {
         const navbar = document.getElementById("navbar")
 
-        if (navbar && window.scrollY > 100) {
+        if (navbar && window.scrollY > 10) {
             navbar.classList.add("active")
         } else if (navbar) {
             navbar.classList.remove("active")
@@ -48,6 +49,8 @@ const Navbar = ({ setShowPopup }) => {
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
+                {/*----------------------------------------------- for mobile navbar-------------------------------------------*/}
+
                 <div className="container-two">
                     <div className="big-navbar-container">
                         <div className="left-nav-container-two">
@@ -67,8 +70,13 @@ const Navbar = ({ setShowPopup }) => {
                         </div>
                     </div>
                 </div>
+
+                {/*----------------------------------------------- for mobile navbar-------------------------------------------*/}
+                <div className="mobile-menu">
+                   <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-        </div>
+        </div >
     )
 }
 

@@ -8,6 +8,7 @@
     top: 0;
 }
 
+
 .container-one {
     background-color: #0054A6;
     display: flex;
@@ -96,6 +97,12 @@
     cursor: pointer;
 }
 
+/*------------------------------------------------ mobile menu----------------------*/
+
+.mobile-menu{
+    display: none;
+}
+
 @media (max-width:450px) {
 
     .container-one {
@@ -109,4 +116,27 @@
     .middle-nav-container-two {
         display: none;
     }
+
+    .container-one{
+        display: none;
+    }
+
+    .mobile-menu{
+        background-color: #0054A6;
+        height: 40px;
+        display: block;
+        align-content: center;
+        color: white;
+
+        
+    }
+
+    .mobile-menu i{
+        padding: 10px;
+        font-size: 25px;
+    }
+
+   
+
+
 }
