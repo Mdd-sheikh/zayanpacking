@@ -5,7 +5,7 @@ import logo from '../../assets/nav-logo.webp'
 const Navbar = ({ setShowPopup }) => {
 
     const [navbar, setNavbar] = useState("navbar")
-    const [mobileNav,setMobileNav] = useState("mobile")
+    const [mobileMenushow, setMobileMenuShow] = useState(false)
 
     const NavbarHandler = () => {
         const navbar = document.getElementById("navbar")
@@ -19,12 +19,22 @@ const Navbar = ({ setShowPopup }) => {
 
     }
 
+    // mobile menu handle 
+
+    const MobileMenuHandler = () => {
+        
+            setMobileMenuShow(prev => !prev)
+
+    }
+
     useEffect(() => {
         window.addEventListener("scroll", NavbarHandler)
+
 
         return () => {
             window.removeEventListener("scroll", NavbarHandler)
         }
+
     }, [])
 
     useEffect(() => {
@@ -61,7 +71,7 @@ const Navbar = ({ setShowPopup }) => {
                             <div onClick={() => setNavbar("solution")} className={`solution ${navbar == "solution" ? "active" : <></>}`}>Solution<i class="fa-solid fa-caret-up"></i></div>
                             <div onClick={() => setNavbar("sustainablity")} className={`sustainablity ${navbar == "sustainablity" ? "active" : <></>}`}>Sustainablity  </div>
                             <div onClick={() => setNavbar("about")} className={`about ${navbar == "about" ? "active" : <></>}`}>About <i class="fa-solid fa-caret-up"></i></div>
-                            <div onClick={() => setNavbar("contact")} className={`contact${navbar == "contact" ? "active" : <></>}`}>Contact </div>
+                            <div onClick={() => setNavbar("contacts")} className={`contact${navbar == "contacts" ? "active" : <></>}`}>Contact </div>
                         </div>
                         <div className="right-nav-container-two">
                             <div className="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -72,9 +82,16 @@ const Navbar = ({ setShowPopup }) => {
                 </div>
 
                 {/*----------------------------------------------- for mobile navbar-------------------------------------------*/}
-                <div className="mobile-menu">
-                   <i class="fa-solid fa-bars"></i>
+                <div className="mobile-menu" id='mobilemenu'>
+                    <i onClick={MobileMenuHandler} class="fa-solid fa-bars"></i>
                 </div>
+                {mobileMenushow ? <div className="mobile-menu-show">
+                    <div className="product">Product  <i class="fa-solid fa-caret-up"></i></div>
+                    <div className="solution">Solution<i class="fa-solid fa-caret-up"></i></div>
+                    <div className="sustainablity">Sustainablity  </div>
+                    <div className="about">About <i class="fa-solid fa-caret-up"></i></div>
+                    <div className="contact">Contact  </div>
+                </div> : <></>}
             </div>
         </div >
     )
