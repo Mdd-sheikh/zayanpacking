@@ -64,8 +64,8 @@
 }
 
 .header h3{
-    padding: 10px;
     text-align: center;
+    font-size: max(1.5vw,12px);
 }
 
 .login-form button{
@@ -96,6 +96,15 @@
 .sign-button span{
     color: red;
     cursor: pointer;
+}
+
+.sign-button p{
+    font-size: max(1.2vw,12px);
+    font-weight: 600;
+}
+
+.conditions p{
+    font-size: max(1vw,10px);
 }
 
 
