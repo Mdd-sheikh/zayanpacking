@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/nav-logo.webp'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = ({ setShowPopup }) => {
 
@@ -64,10 +65,22 @@ const Navbar = ({ setShowPopup }) => {
                 <div className="container-two">
                     <div className="big-navbar-container">
                         <div className="left-nav-container-two">
-                            <img src={logo} alt="" />
+                           <NavLink to="/"> <img src={logo} alt="" /></NavLink>
                         </div>
                         <div className="middle-nav-container-two">
-                            <div onClick={() => setNavbar("product")} className={`product ${navbar == "product" ? "active" : <></>}`}>Product  <i class="fa-solid fa-caret-up"></i></div>
+                            <div onClick={() => setNavbar("product")} className={`product ${navbar == "product" ? "active" : <></>}`}>Product 
+                             <i class="fa-solid fa-caret-up"></i>
+                             <div className="hover-products">
+                                <ul>
+                                    <li>product one</li>
+                                    <li>product two</li>
+                                    <li>product three</li>
+                                    <li>product four</li>
+                                    <li>product five</li>
+                                    <li>product six</li>
+                                </ul>
+                             </div>
+                             </div>
                             <div onClick={() => setNavbar("solution")} className={`solution ${navbar == "solution" ? "active" : <></>}`}>Solution<i class="fa-solid fa-caret-up"></i></div>
                             <div onClick={() => setNavbar("sustainablity")} className={`sustainablity ${navbar == "sustainablity" ? "active" : <></>}`}>Sustainablity  </div>
                             <div onClick={() => setNavbar("about")} className={`about ${navbar == "about" ? "active" : <></>}`}>About <i class="fa-solid fa-caret-up"></i></div>

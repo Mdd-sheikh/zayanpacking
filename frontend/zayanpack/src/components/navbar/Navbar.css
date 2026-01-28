@@ -116,6 +116,29 @@
 }
 
 
+
+/*------------------------------------------------------------hover products-------------------------------*/
+.hover-products{
+    display: none;
+}
+
+.hover-products li{
+  list-style: none;
+  padding: 20px;
+}
+.product:hover .hover-products{
+    width: 250px;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    display: grid;
+    gap: 20px;
+    position: fixed;
+    padding: 10px;
+    border-top-right-radius: 15px;
+}
+
+
 @media (max-width:450px) {
 
     .container-one {

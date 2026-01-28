@@ -1,11 +1,18 @@
-.home{
+.home {
     width: 100%;
 }
 
-.home-container{
-    justify-items: center;
+.home-container {
+    width: 100%;
 }
 
 .home-container img{
     width: 100%;
+}
+
+
+@media (max-width:450px) {
+    .home-container img {
+        height: auto;
+    }
 }
