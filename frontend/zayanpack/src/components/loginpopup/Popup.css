@@ -20,7 +20,7 @@
 }
 
 .login-container button{
-    background-color: tomato;
+    background-color: #0054A6;
     border: none;
     color: white;
     font-weight: 600;
@@ -30,7 +30,7 @@
 }
 .login-container button:hover{
     cursor: pointer;
-    background-color: rgb(228, 57, 27);
+    background-color: #0054A6;
 }
 .login-form {
   display: grid;
@@ -106,6 +106,6 @@
     }
 
     .login-container{
-        width: 80%;
+        width: 70%;
     }
 }
