@@ -1,0 +1,11 @@
+.home{
+    width: 100%;
+}
+
+.home-container{
+    justify-items: center;
+}
+
+.home-container img{
+    width: 100%;
+}
