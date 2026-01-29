@@ -7,7 +7,7 @@ const Navbar = ({ setShowPopup }) => {
 
     const [navbar, setNavbar] = useState("navbar")
     const [mobileMenushow, setMobileMenuShow] = useState(false)
-
+     
     const NavbarHandler = () => {
         const navbar = document.getElementById("navbar")
 

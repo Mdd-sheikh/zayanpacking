@@ -232,3 +232,26 @@
 
 
 }
+
+
+
+
+@media (max-width:760px) {
+
+    .big-navbar-container{
+        width: 100%;
+    }
+    .middle-nav-container-two{
+        gap: 5px;
+        padding: 2px;
+    }
+}
+
+
+
+@media (max-width:930px) {
+    .big-navbar-container{
+        width: 95%;
+        margin: auto;
+    }
+}
