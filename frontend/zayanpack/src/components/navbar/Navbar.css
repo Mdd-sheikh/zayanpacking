@@ -138,6 +138,50 @@
     border-top-right-radius: 15px;
 }
 
+ /*---------------------------------------------------solution hover product------------------------------------------*/
+.hover-solution{
+    display: none;
+}
+
+.hover-solution li{
+    padding: 20px;
+    list-style: none;
+}
+
+.solution:hover .hover-solution{
+    width: 250px;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    display: grid;
+    gap: 20px;
+    position: fixed;
+    padding: 10px;
+    border-top-right-radius: 15px;
+}
+
+/*-----------------------------------------------about hover details-----------------------*/
+.hover-about{
+    display: none;
+}
+
+.hover-about li{
+    padding: 20px;
+    list-style: none;
+}
+
+.about:hover .hover-about{
+     width: 250px;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    display: grid;
+    gap: 20px;
+    position: fixed;
+    padding: 10px;
+    border-top-right-radius: 15px;
+}
+
 
 @media (max-width:450px) {
 

@@ -23,8 +23,8 @@ const Navbar = ({ setShowPopup }) => {
     // mobile menu handle 
 
     const MobileMenuHandler = () => {
-        
-            setMobileMenuShow(prev => !prev)
+
+        setMobileMenuShow(prev => !prev)
 
     }
 
@@ -65,25 +65,51 @@ const Navbar = ({ setShowPopup }) => {
                 <div className="container-two">
                     <div className="big-navbar-container">
                         <div className="left-nav-container-two">
-                           <NavLink to="/"> <img src={logo} alt="" /></NavLink>
+                            <NavLink to="/"> <img src={logo} alt="" /></NavLink>
                         </div>
                         <div className="middle-nav-container-two">
-                            <div onClick={() => setNavbar("product")} className={`product ${navbar == "product" ? "active" : <></>}`}>Product 
-                             <i class="fa-solid fa-caret-up"></i>
-                             <div className="hover-products">
-                                <ul>
-                                    <li>product one</li>
-                                    <li>product two</li>
-                                    <li>product three</li>
-                                    <li>product four</li>
-                                    <li>product five</li>
-                                    <li>product six</li>
-                                </ul>
-                             </div>
-                             </div>
-                            <div onClick={() => setNavbar("solution")} className={`solution ${navbar == "solution" ? "active" : <></>}`}>Solution<i class="fa-solid fa-caret-up"></i></div>
+                            <div onClick={() => setNavbar("product")} className={`product ${navbar == "product" ? "active" : <></>}`}>Product
+                                <i class="fa-solid fa-caret-up"></i>
+                                <div className="hover-products">
+                                    <ul>
+                                        <li>product one</li>
+                                        <li>product two</li>
+                                        <li>product three</li>
+                                        <li>product four</li>
+                                        <li>product five</li>
+                                        <li>product six</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div onClick={() => setNavbar("solution")} className={`solution ${navbar == "solution" ? "active" : <></>}`}>Solution<i class="fa-solid fa-caret-up"></i>
+                                <div className="hover-solution">
+                                    <ul>
+                                        <li>solution one</li>
+                                        <li>solution two</li>
+                                        <li>solution three</li>
+                                        <li>solution four</li>
+                                        <li>solution five</li>
+                                        <li>solution six</li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
                             <div onClick={() => setNavbar("sustainablity")} className={`sustainablity ${navbar == "sustainablity" ? "active" : <></>}`}>Sustainablity  </div>
-                            <div onClick={() => setNavbar("about")} className={`about ${navbar == "about" ? "active" : <></>}`}>About <i class="fa-solid fa-caret-up"></i></div>
+                            <div onClick={() => setNavbar("about")} className={`about ${navbar == "about" ? "active" : <></>}`}>About <i class="fa-solid fa-caret-up"></i>
+                                <div className="hover-about">
+                                    <ul>
+                                        <li>about one</li>
+                                        <li>about two</li>
+                                        <li>about three</li>
+                                        <li>about four</li>
+                                        
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
                             <div onClick={() => setNavbar("contacts")} className={`contact${navbar == "contacts" ? "active" : <></>}`}>Contact </div>
                         </div>
                         <div className="right-nav-container-two">
